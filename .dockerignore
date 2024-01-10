@@ -1,0 +1,7 @@
+bin/
+obj/
+.dockerignore
+.editorconfig
+.gitignore
+dockercompose*.yml
+Dockerfile

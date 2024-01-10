@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  postgres:
+    image: "postgres:13"
+    container_name: postgres
+    environment:
+      - POSTGRES_DB=test
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 9876:5432
+    networks:
+      - simple-network
+networks:
+  simple-network:
+    name: simple-network
+    external: true
